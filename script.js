@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const modelList = document.getElementById('model-list');
-    const apiUrl = "https://api.github.com/repos/yourusername/yourrepo/contents/Models"; // Enlace a la API de GitHub
+    const apiUrl = "https://api.github.com/repos/OffBranded/MODELSTESTING/contents/Models"; // Enlace a la API de GitHub
 
     fetch(apiUrl)
         .then(response => response.json())
@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             models.forEach(model => {
                 const modelName = model.name;
-                const infoUrl = `https://raw.githubusercontent.com/yourusername/yourrepo/main/Models/${modelName}/info.ofdb`;
-                const imgUrl = `https://raw.githubusercontent.com/yourusername/yourrepo/main/Models/${modelName}/main.png`;
+                const infoUrl = `https://raw.githubusercontent.com/OffBranded/MODELSTESTING/main/Models/${modelName}/info.ofdb`;
+                const imgUrl = `https://raw.githubusercontent.com/OffBranded/MODELSTESTING/main/Models/${modelName}/main.png`;
 
                 fetch(infoUrl)
                     .then(response => response.text()) // Leer el archivo como texto
