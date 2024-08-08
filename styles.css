@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#model-list {
+    margin-top: 20px;
+}
+
+.model {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.model img {
+    max-width: 100px;
+    display: block;
+}
+
+.model .info {
+    margin-top: 10px;
+}
